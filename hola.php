@@ -41,7 +41,7 @@
     echo (gettype($edad));
     echo '<br>';
  ?>
-<a href="index.html">Volve al menú</a>
+<a href="index.html">Volver al menú</a>
    
 </body>
 </html>
