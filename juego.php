@@ -14,9 +14,9 @@ for ($i=0;$i<3;$i++)
     
     $color_pc[$i]= $aleatorio ; 
 }
-//print_r($color_pc);
+print_r($color_pc);
 
-
+echo '<br>';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $color_user= array_values($_POST);
     }
@@ -24,25 +24,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    foreach ($color_user as $x){
     if (array_search($x,$color_pc))
         {
-            $cont++;
-
-        }
+            $cont++;        }
     }
-    // echo "acertaste colores" , $cont;
-     echo "<a href='JuegoAzar.html.php?resultado=$cont'>Ver resultado</a>";
+    echo "acertaste colores" , $cont;
+   //  echo "<a href='JuegoAzar.html.php?resultado=$cont'>Ver resultado</a>";
 
 print_r($color_user);
 
-/* for ($i=0;$i<3;$i++)
-{
-  if ($color_pc[$i]==$color_user[$i])
-  {
-    $cont++;
-  }
-   
-}
- */
-//<a href="index.html">Volve al menú</a>
+
+echo "<a href='JuegoAzar.html'  >Volve al menú</a>";
 //$existe = in_array("Banana", $frutas);
 //echo $existe ? "Banana existe en el array" : "Banana no existe en el array";
 

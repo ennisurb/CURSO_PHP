@@ -8,8 +8,8 @@
     foreach ($arreglo as $x) {
         $suma += $x;
     }
-    
     echo "La suma de los números es: " . $suma;
-    <a href="index.html">Volver al menú</a>
+    //echo "La suma de los números es: " , array_sum($arreglo);
+   
     
 ?>
