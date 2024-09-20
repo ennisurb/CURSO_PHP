@@ -5,5 +5,5 @@
         $suma = $num1 + $num2;
         echo "La suma de $num1 y $num2 es: $suma";
     }
-    <a href="index.html">Volve al menú</a>
+ 
     ?>

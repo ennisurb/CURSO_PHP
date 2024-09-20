@@ -1,12 +1,14 @@
 <?php
 $cont=0;
-$color_pc= array(0,0,0);
+$color_pc= array(-1,-1,-1);
 //$color_user= array();
 
+echo '<br>';
 for ($i=0;$i<3;$i++)
 {
     $aleatorio=rand(1,5);
-    while( (array_search($aleatorio,$color_pc)))
+    echo "el aleatorio es ", $aleatorio, " busqueda " , array_search($aleatorio,$color_pc), '<br>';
+    while (array_search($aleatorio,$color_pc )>=0)
     {
        $aleatorio=rand(1,5);
        
@@ -18,6 +20,7 @@ print_r($color_pc);
 
 echo '<br>';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    //var_dump($_POST);
     $color_user= array_values($_POST);
     }
 
@@ -27,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $cont++;        }
     }
     echo "acertaste colores" , $cont;
+    echo '<br>';
    //  echo "<a href='JuegoAzar.html.php?resultado=$cont'>Ver resultado</a>";
 
 print_r($color_user);

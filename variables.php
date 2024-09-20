@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Mi página PHP</title>
-</head>
-<body>
-    <h1>¡Hola, mundo!</h1>
     <?php
-     
-    echo "hola mundo";
+   
+    echo "Ejemplo de declaración de Variables de diversos Tipos";
     echo '<br>';
     //declaración de variables
     $nombre="Jose";
     $edad=15;
     $estatura=1.62;
     $casado=true;
+    //mostrando varables
     echo $nombre;
     echo '<br>';
     echo $casado;
@@ -41,7 +35,3 @@
     echo (gettype($edad));
     echo '<br>';
  ?>
-<a href="index.html">Volver al menú</a>
-   
-</body>
-</html>

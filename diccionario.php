@@ -15,7 +15,10 @@
         
    foreach ($producto as $clave =>  $valor) {
     echo "La clave es: $clave y el valor es: $valor <br>";
+
     }
+
+    
     
     
     
