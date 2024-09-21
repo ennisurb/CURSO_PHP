@@ -9,7 +9,7 @@ echo "el numero aleatorio fue: ", $aleatorio, '<br>';
 
 if ($aleatorio<50)
     {
-        $Descuento=$tCompra*15/100;
+        $descuento=$tCompra*15/100;
     }
 elseif ($aleatorio>=50 && $aleatorio<=80)
     {
