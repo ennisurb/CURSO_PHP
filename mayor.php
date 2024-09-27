@@ -5,6 +5,7 @@
  echo "el mayor es: " , encontrarMayorNumero($edades);
  echo '<br>';
  echo "El valor máximo es: " . max($edades);
+ 
 
  
  function encontrarMayorNumero(array $numeros): int
