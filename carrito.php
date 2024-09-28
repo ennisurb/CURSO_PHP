@@ -24,19 +24,16 @@
         $suma=0;
        foreach ($_POST as $parametro =>$numerocheck)
        {
-        //echo "entro a parametro ", $parametro;
-       
+     
             if ($parametro== "opcion1" ) {  $suma+=$precios[0];}
             if ($parametro== "opcion2" ){  $suma+=$precios[1];}
             if ($parametro== "opcion3") {  $suma+=$precios[2];}
             if ($parametro== "opcion4") {  $suma+=$precios[3];}
             if ($parametro== "opcion5" ){  $suma+=$precios[4];}
-            
-     
-    }
-        echo "Total a PAgar, $suma" . '<br>';
+       }
+        echo "Total a Pagar, $suma" . '<br>';
     $_POST=[];
-}
+    }
     ?>
 </body>
 </html>

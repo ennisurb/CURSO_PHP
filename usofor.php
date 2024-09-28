@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>uso del for</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
 <?php
 
    
@@ -19,7 +27,7 @@
     {
        echo   $i . '<br>';
     }  
-    	
+
     echo( "Regresivo de dos en dos" );
     
     for ( $i=10 ; $i>=0 ; $i-=2)
@@ -39,3 +47,5 @@
    
    
 ?>
+</body>
+</html>

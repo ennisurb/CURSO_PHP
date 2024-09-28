@@ -1,6 +1,7 @@
 <?php
 // Creamos una matriz vacía de 4x4
-$matriz = array();
+//$matriz = array();
+$matriz=[];
 
 // Llenamos la matriz con números aleatorios
 for ($i = 0; $i < 4; $i++) {
@@ -13,7 +14,8 @@ for ($i = 0; $i < 4; $i++) {
 Dentro del lenguaje de diseño web, las tablas HTML se crean usando las etiquetas <table> y </table>. 
 En ella se incluyen dos etiquetas importantes: <tr>, que es para crear filas de tablas y <td>, para crear celdas de datos.
 Todo lo que esté dentro de ambas etiquetas es el contenido de la celda de la tabla.*/
-
+//print_r($matriz);
+//var_dump($matriz);
 echo "<table border='1'>";
 for ($i = 0; $i < 4; $i++) {
     echo "<tr>";

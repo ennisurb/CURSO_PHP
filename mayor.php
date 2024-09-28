@@ -5,7 +5,7 @@
  echo "el mayor es: " , encontrarMayorNumero($edades);
  echo '<br>';
  echo "El valor máximo es: " . max($edades);
- 
+
 
  
  function encontrarMayorNumero(array $numeros): int
@@ -15,10 +15,10 @@
      $mayorNumero = $numeros[0];
  
      // Iteramos sobre cada elemento del arreglo
-     foreach ($numeros as $numero) {
+     foreach ($numeros as $n) {
          // Si el número actual es mayor que el número mayor actual, lo actualizamos
-         if ($numero > $mayorNumero) {
-             $mayorNumero = $numero;
+         if ($n > $mayorNumero) {
+             $mayorNumero = $n;
          }
      }
  
