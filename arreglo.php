@@ -1,19 +1,21 @@
 <?php
-   // $arreglo = array("Maria","pedro", "josé");
-   $arreglo = array(12,15,18,20,5);
-    var_dump($arreglo);
+   $nombres = ["Maria","pedro", "josé"];
+   $horas = [45,140,18];
+       
      
-    $suma = 0;
-    $arreglo[2]=38;
- 
-    for ($i=0;$i<count($arreglo);$i++)
+    for ($i=0; $i<count($horas);$i++)
     {
-        $suma=$suma+$arreglo[$i];
+        if ($horas[$i]<=40) 
+        {
+            $pago = ($horas[$i]*20);
+        }
+        else
+        {
+            $pago = 40*20 + ((($horas[$i]-40)*25));  
+        }
+        echo "El sr. $nombres[$i] cobrará  $pago", "<br>";  
     }
-     /*  foreach ($arreglo as $x) {
-        $suma += $x;
-    }*/
-    echo "La suma de los números es: " . $suma;
+    
     //echo "La suma de los números es: " , array_sum($arreglo);
    
     

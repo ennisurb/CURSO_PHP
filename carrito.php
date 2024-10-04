@@ -20,8 +20,10 @@
      {
         
         //Var_dump($_POST);
-        $precios=array (10,1,3,15,5);
+        $precios=[10,1,3,15,5];
+        $chequeos=$_POST;
         $suma=0;
+        
        foreach ($_POST as $parametro =>$numerocheck)
        {
      
@@ -30,7 +32,11 @@
             if ($parametro== "opcion3") {  $suma+=$precios[2];}
             if ($parametro== "opcion4") {  $suma+=$precios[3];}
             if ($parametro== "opcion5" ){  $suma+=$precios[4];}
-       }
+                       
+        }
+       
+
+     
         echo "Total a Pagar, $suma" . '<br>';
     $_POST=[];
     }

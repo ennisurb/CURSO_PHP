@@ -22,7 +22,7 @@
         <div class="color-square amarillo"></div>
         <label for="color5"> 5</label>
 
-    <form  method="post" action="juego.php" >
+    <form  method="post" action="">
        
             <label for="num1">Primer color</label>
             <input type="number" name="num1"><br>
@@ -32,13 +32,51 @@
             <input type="number" name="num3"><br>
             <br>
             <br>
-            <label for="Resultado">" RESULTADO AQUI"</label>
-            
+                       
             <input type="submit" name= "Enviar"  value="Adivino" >
            
           
      </form>
      
+     <?php
+
+    if (isset($_POST['Enviar']) &&  !(empty($_POST["num1"]))) 
+       {
+      
+        $color_pc=[];
+        $color_user= [];
+
+        for ($i=0;$i<3;$i++)
+        {
+            $aleatorio=rand(1,5);
+        
+            while ((in_array($aleatorio,$color_pc ))) 
+              { $aleatorio=rand(1,5);
+              }
+                    
+            $color_pc[$i]= $aleatorio ; 
+        }
+        print_r($color_pc);
+
+        echo '<br>';
+    
+        
+            $color_user= array_values($_POST);
+            print_r($color_user);
+            $cont=0;
+
+                foreach ($color_user as $x){
+                    if (in_array($x,$color_pc))
+                        {
+                            $cont++;        }
+                     }
+            echo '<br>';        
+            echo " acertaste colores " , $cont;
+                
+                
+       
+    }   
+?>
        
        
         
@@ -50,12 +88,8 @@
         <label><input type="checkbox" name="opcion2"> Azul</label><br> -->
         
 
-        
-       
-    </form>
+      
 
-
-  
  
    
 </body>

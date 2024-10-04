@@ -3,25 +3,37 @@
 
    //recorrido de Diccionario de varios registros
    $usuarios = [
-    "usuario1" => [
+        "juanpe" => 
+        [
         "nombre" => "Juan",
         "apellido" => "Pérez",
         "deuda" => 30
-    ],
-    "usuario2" => [
+        ],
+        "mariaga" =>
+        [
         "nombre" => "María",
         "apellido" => "García",
         "deuda" => 25
-    ]
+        ],
+        "pedroro" =>
+        [
+        "nombre" => "Pedro",
+        "apellido" => "Rodriguez",
+        "deuda" => 23
+        ]
 ];
 $suma=0;
-foreach ($usuarios as $usuario => $datosUsuario) {
-    echo "Usuario: " . $usuario . "<br>";
-    foreach ($datosUsuario as $clave => $valor) {
-        echo "$clave: $valor <br>";
+echo " nombre del primer usuario <br>";
+//echo $usuarios["juanpe"]["nombre"];
+echo "<br>";
+
+foreach ($usuarios as $clave => $ClaveUsuario) {
+    echo "Usuario: " .$clave . "<br>";
+    foreach ($ClaveUsuario as $campo => $valor) {
+        echo "$campo: $valor <br>";
         
     }
-    $suma=$suma + $datosUsuario["deuda"];
+    $suma=$suma + $ClaveUsuario["deuda"];
     echo "<br>";
 }
    
