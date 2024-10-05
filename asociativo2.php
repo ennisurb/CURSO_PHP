@@ -24,7 +24,7 @@
 ];
 $suma=0;
 echo " nombre del primer usuario <br>";
-//echo $usuarios["juanpe"]["nombre"];
+echo $usuarios["juanpe"]["nombre"];
 echo "<br>";
 
 foreach ($usuarios as $clave => $ClaveUsuario) {
@@ -36,6 +36,7 @@ foreach ($usuarios as $clave => $ClaveUsuario) {
     $suma=$suma + $ClaveUsuario["deuda"];
     echo "<br>";
 }
+
    
   echo "la suma es <br>", $suma;  
     
